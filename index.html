@@ -9,7 +9,12 @@
   <style>
     *{box-sizing:border-box;margin:0;padding:0}body{background-color:#f1f3f5;font-family:'Noto Sans KR',sans-serif;color:#111}
     .no-print{background:#ffffff;padding:18px 24px;max-width:1220px;margin:18px auto;border-radius:12px;box-shadow:0 4px 18px rgba(0,0,0,0.08);position:relative}
-    .app-sys-ver{display:inline-block;font-family:monospace;font-size:11px;font-weight:700;color:#868e96;background:#f8f9fa;padding:3px 8px;border-radius:4px;border:1px solid #e9ecef;margin-bottom:8px;letter-spacing:0.5px}
+    
+    .top-meta-bar{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+    .app-sys-ver{display:inline-block;font-family:monospace;font-size:11px;font-weight:700;color:#868e96;background:#f8f9fa;padding:3px 8px;border-radius:4px;border:1px solid #e9ecef;letter-spacing:0.5px}
+    .counter-badge{display:inline-flex;align-items:center;height:20px}
+    .counter-badge img{height:20px;display:block}
+
     .header-bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;border-bottom:2px solid #e9ecef;padding-bottom:12px}
     .header-bar h1{font-size:22px;font-weight:900}
     .save-indicator{font-size:13px;font-weight:700;color:#2b8a3e;background:#ebfbee;padding:4px 10px;border-radius:20px;border:1px solid #b2f2bb;display:flex;align-items:center;gap:5px}
@@ -89,7 +94,13 @@
 <body>
 
   <div class="no-print">
-    <div class="app-sys-ver">version.korea7_oy_261018</div>
+    <div class="top-meta-bar">
+      <div class="app-sys-ver">version.korea7_oy_261018</div>
+      <div class="counter-badge">
+        <!-- ofamduo 계정의 k7oy001 저장소 방문자 카운터 -->
+        <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fofamduo.github.io%2Fk7oy001&count_bg=%231971C2&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=%EB%B0%A9%EB%AC%B8%EC%9E%90&edge_flat=false" alt="방문자 수" />
+      </div>
+    </div>
 
     <div class="header-bar">
       <div style="display:flex; align-items:center; gap:12px;">
